@@ -1,0 +1,14 @@
+body {
+    background-image: url("/static/images/Hepatitis-B-Origin.jpg");
+    background-color: rgb(128, 74, 223);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+.container {
+      max-width: fit-content;
+}
+.row {
+  --bs-gutter-x: 1.0rem;
+  box-shadow: inset;
+}

@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block css %}
+  <link rel="stylesheet" href="/static/css/database.css">
+{% endblock css %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center p-3" style="background-color: rgba(240, 183, 98, 0.829);">Database</h1>
+            </div>
+            <form method="post" class="card" style="background-color: rgba(187, 166, 166, 0.89);">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col">
+                        ID
+                    </div>
+                    <div class="col">
+                        Sex
+                    </div>
+                    <div class="col">
+                        Steroid
+                    </div>
+                    <div class="col">
+                        Antivirals
+                    </div>
+                    <div class="col">
+                        Fatigue
+                    </div>
+                    <div class="col">
+                        Malaise
+                    </div>
+                    <div class="col">
+                        Anorexia
+                    </div>
+                    <div class="col">
+                        Big liver
+                    </div>
+                    <div class="col">
+                        Firm liver
+                    </div>
+                    <div class="col">
+                        Palable spleen
+                    </div>
+                    <div class="col">
+                        Spiders
+                    </div>
+                    <div class="col">
+                        Ascites
+                    </div>
+                    <div class="col">
+                        Varices
+                    </div>
+                    <div class="col">
+                        Bilirubin
+                    </div>
+                    <div class="col">
+                        Alk phosphate
+                    </div>
+                    <div class="col">
+                        Sgot
+                    </div>
+                    <div class="col">
+                        Albumin
+                    </div>
+                    <div class="col">
+                        Protime
+                    </div>
+                    <div class="col">
+                        Histology
+                    </div>
+                    </div>
+                    {% for d in data %}
+                    <div class="row">
+                    <div class="col">
+                        {{ d.id }}
+                    </div>
+                    <div class="col">
+                        {{ d.sex }} 
+                    </div>
+                    <div class="col">
+                        {{ d.steroid }} 
+                    </div>
+                    <div class="col">
+                        {{ d.antivirals }} 
+                    </div>
+                    <div class="col">
+                        {{ d.fatigue }} 
+                    </div>
+                    <div class="col">
+                        {{ d.malaise }} 
+                    </div>
+                    <div class="col">
+                        {{ d.anorexia }} 
+                    </div>
+                    <div class="col">
+                        {{ d.liver_big }} 
+                    </div>
+                    <div class="col">
+                        {{ d.liver_firm }} 
+                    </div>
+                    <div class="col">
+                        {{ d.spleen_palable }} 
+                    </div>
+                    <div class="col">
+                        {{ d.spiders }} 
+                    </div>
+                    <div class="col">
+                        {{ d.ascites }} 
+                    </div>
+                    <div class="col">
+                        {{ d.varices }} 
+                    </div>
+                    <div class="col">
+                        {{ d.bilirubin }} 
+                    </div>
+                    <div class="col">
+                        {{ d.alk_phosphate }} 
+                    </div>
+                    <div class="col">
+                        {{ d.sgot }} 
+                    </div>
+                    <div class="col">
+                        {{ d.albumin }} 
+                    </div>
+                    <div class="col">
+                        {{ d.protime }} 
+                    </div>
+                    <div class="col">
+                        {{ d.histology }} 
+                    </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            <form>
+        </div>
+    </div>
+{% endblock %}
